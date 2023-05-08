@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    background-color: #F4F4F4;
+}
+
+header {
+    height: 66px;
+
+    background-color: #1B83E2;
+}
+
+main{
+    padding: 24px;
+}
+
+h1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 18px;
+    padding-top: 25px;
+
+    text-align: center;
+    color: #F4F4F4;
+}
+
+label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #777777;
+}
+
+select{
+    height: 48px;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 16px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+
+    cursor: pointer;
+    outline: none;/*um azul em volta do selet quando passa o cursor*/
+    appearance: none;/*a seta do selet*/
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+input{
+    height: 48px;
+    width: 100%;
+    padding-left: 16px;
+    margin-top: 6px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+
+    font-size: 18px;
+    outline: none;
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+button{
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    line-height: 18px;
+    border-radius: 25px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color:#F4F4F4;
+    background-color: #1B83E2;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+button:active{
+    opacity: 0.7;
+}
