@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
     font-family: "Roboto", sans-serif;
 }
-
 body {
     background-color: #E5E5E5;
 }
-
 .container {
     width: 375px;
     margin: 0 auto;
@@ -16,38 +17,29 @@ body {
 
     background-color: #F4F4F4;
 }
-
 header {
     height: 66px;
 
     background-color: #1B83E2;
 }
-
-main{
+main {
     padding: 24px;
 }
-
-h1{
-    font-style: normal;
-    font-weight: normal;
+h1 {
     font-size: 24px;
-    line-height: 18px;
+
     padding-top: 25px;
 
     text-align: center;
     color: #F4F4F4;
 }
-
-label{
-    font-style: normal;
+label {
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
 
     color: #777777;
 }
-
-select{
+select {
     height: 48px;
     width: 100%;
     border-radius: 4px;
@@ -63,8 +55,7 @@ select{
     border: 1px solid #BBBBBB;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
-
-input{
+input {
     height: 48px;
     width: 100%;
     padding-left: 16px;
@@ -79,15 +70,12 @@ input{
     border: 1px solid #BBBBBB;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
-
-button{
+button {
     height: 48px;
     width: 100%;
     margin-bottom: 24px;
-    line-height: 18px;
     border-radius: 25px;
 
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
@@ -95,10 +83,32 @@ button{
     color:#F4F4F4;
     background-color: #1B83E2;
 }
-
-button:hover{
+button:hover {
     opacity: 0.9;
 }
-button:active{
+button:active {
     opacity: 0.7;
+}
+section {
+    border-radius: 4px;
+    border: 1px solid #1B83E2;
+}
+
+.currency-container {
+    padding: 10px;
+
+    font-size: 14px;
+    text-align: center;
+    color: #777777;
+}
+
+.currency-value {
+    color: #1B83E2;
+    font-weight: bold;
+    font-size: 20;
+}
+
+.arrow-img {
+    margin: 15px auto;
+    display: block;
 }
