@@ -1,5 +1,6 @@
 const dolar = 5.2
 const euro = 5.9 
+const bitcoin = 138640.1
 const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
 
@@ -26,6 +27,12 @@ const convetValue = () => {
             currency: 'EUR',
         }).format(inputReais / euro);
     }
+    if(select.value == 'Bitcoin'){
+        currencyValueText.innerHTML = new Intl.NumberFormat('en-US', { 
+            style: 'currency',
+            currency: 'BTC',
+        }).format(inputReais / bitcoin);
+    }
 };
 
 
@@ -42,6 +49,10 @@ const changerCurrency = () =>{
     if(select.value === 'US$ Dólar americano'){
         currencyName.innerHTML = "Dolar"
         currencyImg.src = "./assets/eua.png"
+    }
+    if(select.value === 'Bitcoin'){
+        currencyName.innerHTML = "Bitcoin"
+        currencyImg.src = "./assets/bitcoin.png"
     }
     convetValue();
 }
