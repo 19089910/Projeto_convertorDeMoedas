@@ -2,7 +2,6 @@ const dolar = 5.2
 const euro = 5.9 
 const bitcoin = 138640.1
 
-//const button = document.getElementById('convert-button')
 const select = document.getElementById('currency-select')
 const inputReais = document.getElementById('input-real')
 //responsavel pela formatação da caixa input: formato de saida e R$ 0.000,00
@@ -81,6 +80,5 @@ const changerCurrency = () =>{
 inputReais.addEventListener('input', updateInputValue);
 inputReais.addEventListener('blur', handleInputBlur);
 //eventos de clicks:
-//button.addEventListener('click', convetValue);
 inputReais.addEventListener('keyup', convetValue);
 select.addEventListener('change', changerCurrency);

@@ -70,19 +70,6 @@ input {
     border: 1px solid #BBBBBB;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
 }
-button {
-    height: 48px;
-    width: 100%;
-    margin-bottom: 24px;
-    border-radius: 25px;
-
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    color:#F4F4F4;
-    background-color: #1B83E2;
-}
 button:hover {
     opacity: 0.9;
 }
