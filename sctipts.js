@@ -1,6 +1,6 @@
-const dolar = 5.2
-const euro = 5.9 
-const bitcoin = 138640.1
+//const dolar = 5.2
+//const euro = 5.9 
+//const bitcoin = 138640.1
 
 const select = document.getElementById('currency-select')
 const inputReais = document.getElementById('input-real')
@@ -23,13 +23,23 @@ const formatNumberToCurrency = (number) => {
 
 updateInputValue(); // formata o valor padrão ao carregar a página
 
-const convetValue = () => {
-    //console.log(inputReais.value); saida:R$ 1.000,00
+const priceQuotations = async () => {
+
+}
+
+const convetValue = async () => {
+    //console.log(inputReais.value); //saida:R$ 1.000,00
     const realValueText = document.getElementById('real-value-text')
     const currencyValueText = document.getElementById('currency-value-text')
     const inputNumericValue = parseFloat(inputReais.value.replace(/\./g, '').replace(/,/g, '.').replace(/[^\d.-]/g, ''));
-    //console.log(inputNumericValue); saida: 1000.00
-
+    //console.log(inputNumericValue); //saida: 1000.00
+    
+    //CONSUMIR API PARA A CONVERÇÃO SER VALORES DINAMICOS ATUALIZADOS
+    const data = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL').then(response => response.json())
+    //console.log(data)
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    
     //formataçaõ de moeda reais
     realValueText.innerHTML = new Intl.NumberFormat('pt-BR', { 
         style: 'currency',
