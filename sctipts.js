@@ -1,6 +1,4 @@
-//const dolar = 5.2
-//const euro = 5.9 
-//const bitcoin = 138640.1
+const bitcoin = 138640.1
 
 const select = document.getElementById('currency-select')
 const inputReais = document.getElementById('input-real')
@@ -22,10 +20,6 @@ const formatNumberToCurrency = (number) => {
 
 
 updateInputValue(); // formata o valor padrão ao carregar a página
-
-const priceQuotations = async () => {
-
-}
 
 const convetValue = async () => {
     //console.log(inputReais.value); //saida:R$ 1.000,00
